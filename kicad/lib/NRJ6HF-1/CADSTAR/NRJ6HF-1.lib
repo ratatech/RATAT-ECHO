@@ -1,0 +1,21 @@
+.NRJ6HF-1 :1 ;Phone Connectors STEREO THREADED NO HARDWARE INCLUDED
+NRJ6HF1
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=MH1 8=MH2
+*PLB 1="S" 2="R" 3="T" 4="TN" 5="RN" 6="G" 7="MH1" 8="MH2"
+*MXP 9
+*DFN NRJ6HF-1
+~!Manufacturer_Name (Neutrik)
+~!Manufacturer_Part_Number (NRJ6HF-1)
+~!Mouser Part Number (550-20384)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Neutrik/NRJ6HF-1?qs=lytv%2F56AjyI%252Bc%252Bp%2FfWZpBw%3D%3D)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Allied_Number (70347961)
+~!Link Allied Price/Stock (https://www.alliedelec.com/neutrik-nrj6hf-1/70347961/)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/5/NRJ6HF-1.pdf)
+~!Height (12.7mm)
+~!3D_Model (NRJ6HF-1)
+NRJ6HF-1
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Connector_Audio)(type KiCad)(uri C:/Users/rata/Dropbox/DIY_Electronics/ratatech_echo/kicad/lib/Connector_Audio.pretty)(options "")(descr ""))
+)

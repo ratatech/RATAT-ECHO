@@ -1,0 +1,9 @@
+Manufacturer=Neutrik
+PartNumber=NRJ6HF-1
+PartCategory=Connector
+PackageCategory=Other
+PinCount=8
+Version=1.3
+Released=2020-01-23 11:01:59
+Downloaded=2020-05-12 18:39:35
+3D=Y
