@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'M2028B2B1W03'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "NKK Switches", "M2028B2B1W03" (!) = "", "M2028B2B1W03", "Other", "633-M2028B2B1W03", "https://www.mouser.co.uk/ProductDetail/NKK-Switches/M2028B2B1W03?qs=VzCF7O64HHXs2PH9MXLaKg%3D%3D", "", "", "70366611", "https://www.alliedelec.com/nkkswitches-m2028b2b1w03/70366611/", "Toggle Switches (ON)OFF(ON) .689 LRG BAT 12MM BSHNG PC", "https://static6.arrow.com/aropdfconversion/494601e65ed1a004a7a84552e05ed912377b6827/103273346473971mtogglesbushing.pdf", "28.8 mm"
+END_PART
+
+END.

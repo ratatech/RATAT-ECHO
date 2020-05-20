@@ -1,0 +1,9 @@
+Manufacturer=NKK Switches
+PartNumber=M2028B2B1W03
+PartCategory=Switch
+PackageCategory=Other
+PinCount=6
+Version=1.6
+Released=2020-03-08 23:23:02
+Downloaded=2020-05-16 16:30:25
+3D=Y

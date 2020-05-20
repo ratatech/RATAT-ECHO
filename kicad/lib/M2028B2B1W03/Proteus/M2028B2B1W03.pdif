@@ -1,0 +1,135 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "M2028B2B1W03"
+   (description "Toggle Switches (ON)OFF(ON) .689 LRG BAT 12MM BSHNG PC")
+   (family "SWI")
+   (package "M2028B2B1W03")
+   (attribute "Datasheet Link" "https://static6.arrow.com/aropdfconversion/494601e65ed1a004a7a84552e05ed912377b6827/103273346473971mtogglesbushing.pdf")
+   (attribute "Geometry.Height" "28.8mm")
+   (attribute "Manufacturer_Name" "NKK Switches")
+   (attribute "Manufacturer_Part_Number" "M2028B2B1W03")
+   (attribute "Mouser Part Number" "633-M2028B2B1W03")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/NKK-Switches/M2028B2B1W03?qs=VzCF7O64HHXs2PH9MXLaKg%3D%3D")
+   (attribute "RS Part Number" "")
+   (attribute "RS Price/Stock" "")
+   (attribute "Allied_Number" "70366611")
+   (attribute "Allied Price/Stock" "https://www.alliedelec.com/nkkswitches-m2028b2b1w03/70366611/")
+   (gate
+    (symbol "M2028B2B1W03")
+    (pin "NO_1" 1 PS)
+    (pin "COM_1" 2 PS)
+    (pin "NC_1" 3 PS)
+    (pin "NO_2" 4 PS)
+    (pin "COM_2" 5 PS)
+    (pin "NC_2" 6 PS)
+   )
+  )
+  (symbol "M2028B2B1W03"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -300) (pt 200 -300) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "M2028B2B1W03"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.95 11.2)
+      (pt 8.75 11.2)
+      (pt 8.75 -1.8)
+      (pt -3.95 -1.8)
+      (pt -3.95 11.2))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.95 11.2)
+      (pt 8.75 11.2)
+      (pt 8.75 -1.8)
+      (pt -3.95 -1.8)
+      (pt -3.95 11.2))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.95 12.2)
+      (pt 9.75 12.2)
+      (pt 9.75 -3.6)
+      (pt -4.95 -3.6)
+      (pt -4.95 12.2))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt 0 -2.5)
+      (arc (pt 0.000 -2.500) (pt -0.200 -2.600) (pt 0.000 -2.400) (start 180.0) (sweep .0))
+      (pt -0.2 -2.5)
+      (arc (pt -0.200 -2.500) (pt -0.200 -2.600) (pt 0.000 -2.400) (start 180.0) (sweep 180.0))
+      (pt 0 -2.5))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt 0.000 4.700) (padstack 0))
+   (leg 3 (pt 0.000 9.400) (padstack 0))
+   (leg 4 (pt 4.800 0.000) (padstack 0))
+   (leg 5 (pt 4.800 4.700) (padstack 0))
+   (leg 6 (pt 4.800 9.400) (padstack 0))
+   (padstack 0
+    (hole 1.8)
+    (plated true)
+    (pad (layer TCOP) (round 2.700))
+    (pad (layer INNER) (round 2.700))
+    (pad (layer BCOP) (round 2.700))
+   )
+   (model "M2028B2B1W03.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)
