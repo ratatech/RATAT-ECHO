@@ -1,261 +1,200 @@
-I. File list
-------------
-AVLTNode.cc		AVL tree node (AVLTNode) implementation
-AVLTNode.h		AVLTNode header
-AVLTree.cc		AVL tree (AVLTree) implementation
-AVLTree.h		AVLTree header
-BinarySearchTree.cc	Binary search tree (BinarySearchTree) implementation
-BinarySearchTree.h	BinarySearchTree header
-BSTNode.cc		Binary search tree node (BSTNode) implementation
-BSTNode.h		BSTNode header
-main.cc			driver for word-count
-Makefile		Makefile to build word-count
-MaxHeap.cc		Specialized max binary heap (MaxHeap) implementation
-MaxHeap.h		MaxHeap header
-README			This file
-SplayTree.cc		Splay tree (SplayTree) implementation
-SplayTree.h		SplayTree header
-TemplateInst.cc		Instantiation file for all templated classes
-heapsort.ps             Plot file for heapsort w/ splay tree on 10 files
-quicksort.ps            Plot file for quicksort w/ splay tree on 10 files
-selectionsort.ps        Plot file for selection sort w/ splay tree on 10 files
-
-
-Program can be built using default make arguments.
-
-
-
-II. Design
-----------
-A. Program design
-
-1. Style
-Code given by CSE326 staff was treated as though it was written by a team
-member.  Naming conventions of pre-existing code was changed to match the
-team's preferred style for member functions.
-
-2. Collision handling
-It seemed apparent that because we were generalizing through templates, to have
-the result of doing an operation on some key that already existed be hardcoded
-was not in good form.  This is where the collision policy idea came to bear.
-The general principal is that the end-programmer using a tree should be able to
-specify what happens as a result of a collision by supplying a function to
-handle this event.  In case the end-programmer does not know about function
-pointers, or has no desire to specialize the trees by supplying a collision
-function, a default must be set up.  This directly translates to the
-unparameterized constructor (default), the parameterized constructor (with
-collision function) and the setCollisionPolicy function (in case they need to
-change).
-
-3. bool <function>(param& , param&) signatures
-We wanted to have a way to notify the user of invalid find operations.  Since
-the code is templatized we dont know what type to return for the function.  Thus
-the bool return.  Essentially, if the operation is successful, return true and
-modify the appropriate parameter that was passed in by reference.  If the
-operation fails, return false, and leave the parameter alone.  With this design
-decision made, other similar functions needed to have similar feels to maintain
-a consistant API.
-
-
-B. AVL Tree
-
-1. Insertion
-An interative insert function was written to give better performance because
-recursive functions has to allocate/deallocate multiple stack frames.
-
-2. AVLTNode
-Because an AVL tree is a self-balancing tree, the node structure needs to be
-extended to handle height information.
-
-
-C. Splay Tree
-
-1. Iteration vs. Recursion
-Iteration was chosen specifically for code reuse purposes. The general algorithm
-for any splay tree operation was to perform the operation then splay at that
-particular node. Using the provided functions from the binary search tree code
-allowed finding a particular node easy. Then once found, it was a matter of
-simply splaying it to the root (while its not the root, splay it). The specific
-algorithm for inserting was taken directly from the BST code, with only small
-modifications for splaying and personal preferences on handling returns (try to
-have return keyword in only one place).  
-
-2. Small functions
-They are easier to test, easier to code, easier to read,and definitely easier to
-understand. The general concept is to minimize the syntax baggage for public
-interface functions, letting them act as drivers, and have protected functions
-do the gruntwork.
+<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
 
-3. zig, zigZig, zigZag
-Named after the operations that we discussed in class, these are the driver
-functions for rotation.  Their names attempt to describe the general pattern
-(although each describes two different symmetrical patterns) of a
-node-parent-grandparent relationship.  In each function, there are calls to the
-appropriate hanging function to simulate the rotation (see 5 for more
-information).  Because of the binary ordering properties of a splay tree, each
-function could make a set of assumptions on the data as to how to rotate, or
-hang parent nodes.
+<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-4. hangPLeft, hangPRight 
-The heart of rotation, these functions perform the basic operation of "hanging"
-a parent (P) off of its child in a function name specified direction.  They
-handle all of the pointer manipulation that maintains proper tree structure.
-Although synonymous with rotation to some degree, it was felt that "hanging" and
-direction gave a more complete and accurate description of what the function was
-doing compared to "rotating".  Specifically, a rotation is nothing more than
-hanging a parent off of its child, and a double rotation is nothing more than a
-strictly ordered coupling of these hang operations.
+![Alt text](imgs/ratatech_echo_pcb_top_view.png?raw=true "RATAT-ECHO pcb top view")
 
+***INSERT GRAPHIC HERE (include hyperlink in image)***
 
-D. Binary Heap (MaxHeap)
+# RATAT-ECHO
 
-1. Specialization
-Specializations were made to the binary heap.  This includes the omission of an
-insert() function, no generic node type for the array, and making it a max heap.
-Max heap was the most logical choice for this assignment because this assignment
-dealt with word frequency.
+> Subtitle or Short Description Goes Here
 
+> ideally one sentence
 
-2. Implementation
-The MaxHeap was implemented using parallel arrays, one each for words and
-frequency.  buildHeap() was implemented using Floyd's algorithm, which runs in
-O(n).
+> include terms/tags that can be searched
 
+**Badges will go here**
 
-3. heapSort()
-This was not implemented as a member function of the MaxHeap class.  The basic
-algorithm for this function is to print the maximum value in the heap and then
-delete the maximum value.  The deletion will also call percolateDown() on the
-new root.  The printMax() method used in heapSort() is the main bottleneck of
-this algorithm due to the calls to the system I/O.
+- build status
+- issues (waffle.io maybe)
+- devDependencies
+- npm package
+- coverage
+- slack
+- downloads
+- gitter chat
+- license
+- etc.
 
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
 
+- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
 
-III. Analysis
--------------
-The text of both authors, Bacon and Shakespeare, show a predominance of the
-words "the," "of," and "and."  In Bacon's "The Essays" and "The New Atlantis,"
-these common words are occurring approximately 12.4% and 14.3% of the time,
-respectively.  In Shakespeare's "Hamlet" and "All's Well That Ends Well," these
-words occur approximately 6.86% and 6.56%, respectively.  Based on this
-evidence, we conclude that Bacon did not write Shakespeare's works.
+***INSERT ANOTHER GRAPHIC HERE***
 
-Take that, you conspiracy theorists.
+[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
 
+- Most people will glance at your `README`, *maybe* star it, and leave
+- Ergo, people should understand instantly what your project is about based on your repo
 
+> Tips
 
-IV. Expected Bottlenecks
-------------------------
-A. Binary Search Tree
+- HAVE WHITE SPACE
+- MAKE IT PRETTY
+- GIFS ARE REALLY COOL
 
-1. insert()/findNode()
-It was hard to separate these two functions because insert() relies on
-findNode() as a part of its algorithm.  This takes the longest in the BST
-because it has no balancing properties.  In the case of this sorted list, it is
-essentially a doubly-linked list with O(n) running time.
+> GIF Tools
 
+- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
+- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
 
-2. getDataAsArray()/recursiveCopy()
-Stack frame allocation/deallocation from recursiveCopy() kills the performance
-of these functions.
+**Recordit**
 
+![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
 
-B. AVL Tree
+**ttystudio**
 
+![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
 
-1. insert()/findNode()
-This needs to call findNode() from the BinarySearchTree class, which takes
-O(log n).
+---
 
+## Table of Contents (Optional)
 
-C. Splay Tree
+> If your `README` has a lot of info, section headers might be nice.
 
+- [Installation](#installation)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Team](#team)
+- [FAQ](#faq)
+- [Support](#support)
+- [License](#license)
 
-1. insert()
-Similar to the AVL Tree, this needs to call findNode() from the BinarySearchTree
-class, which takes O(log n).
 
-2. splay()
-This has to be called every time.  Although this is a constant time operation
-for sorted input, the total running time will be linearly proportional to the
-amount of data.
+---
 
+## Example (Optional)
 
-3. hangPRight()
-This again is called every time.  It is interesting to note that this was called
-twice as many times as insert(), though only one rotation is done per insert.
+```javascript
+// code away!
 
+let generateProject = project => {
+  let code = [];
+  for (let js = 0; js < project.length; js++) {
+    code.push(js);
+  }
+};
+```
 
+---
 
-V. Real Bottlenecks
--------------------
-A. Data weirdness
+## Installation
 
-1. findNode()/std::min()
-When looking at the data for the BinarySearchTree, findNode() was found to
-take approximately 85% of the running time with approximately 45,000 calls.
-However, std::min() makes approximately 231,000,000,000 calls but only takes
-15.5% of the running time.  We believe the data is skewed/inaccurate because of
-these findings.
+- All the `code` required to get started
+- Images of what it should look like
 
+### Clone
 
-B. Binary Search Tree
+- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
 
-1. insert()/findNode()
-As expected, these two functions took most of the processing time.
+### Setup
 
-2. getDataAsArray()/recursiveCopy()
-Again, as expected, these algorithms took a long time to run, although only
-one call was made to getDataAsArray().
+- If you want more syntax highlighting, format your code like this:
 
+> update and install this package first
 
-C. AVL Tree
+```shell
+$ brew update
+$ brew install fvcproductions
+```
 
-1. insert()
-This took the longest of the AVLTree functions at approximately 6.14%.
+> now install npm and bower packages
 
+```shell
+$ npm install
+$ bower install
+```
 
-D. Splay Tree
+- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
 
-1. insert()
-Total processing time was approximately 2.11%.  
+---
 
+## Features
+## Usage (Optional)
+## Documentation (Optional)
+## Tests (Optional)
 
-2. splay()
-Total processing time was also approximately 2.11%.
+- Going into more detail on code and technologies used
+- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
 
+---
 
-3. hangPRight()
-This also took approximately 2.11%.  However, it is interesting to note that
-twice as many hangPRight() calls were made compared to splay().
+## Contributing
 
+> To get started...
 
+### Step 1
 
-VI. Sorting Algorithm Analysis
-------------------------------
+- **Option 1**
+    - Fork this repo!
 
-1. HeapSort - Heapsort normally runs in N log N for best, worst and average case
-   It is thus reasonably efficient for binary comparisons. It should on average run
-   in parallel with quicksort.
+- **Option 2**
+    - Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
 
-2. Selection Sort- Selection Sort is supposed to run in N^2 time for worst and best
-   case scenario, and thus should be the worst of the three algorithms, except for
-   extremely aberrant input.
+### Step 2
 
-3. QuickSort- Quicksort should run in N log N for best and average case scenarios.
-   Again, it is reasonably efficient on binary comparisons and should be running
-   equally well as heapsort.
+- **HACK AWAY!**
 
+### Step 3
 
-In reality, heapsort is clearly the most efficient on our particular data set. We
-speculate that the reason it outperforms quicksort for all the inputs is that
-quicksort is not running at average time - our input is a poor represenatation of
-average input for quicksort. Specifically, the input is very dense, so that many
-of the different items have the same value, and thus a lot of swapping must occur,
-slowing a normally fast algorithm down. It still is not obviously enough to force
-quicksort to run at *worst* case time, as it still better than selection sort.
-Essentially, heapsort is less affected by our semi-aberrant data than quicksort,
-and selection sort is pretty bad for large data sets to begin with.
+- Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
 
-(See plots for reference)
+---
 
+## Team
+
+> Or Contributors/People
+
+| <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
+| :---: |:---:| :---:|
+| [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
+| <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
+
+- You can just grab their GitHub profile image URL
+- You should probably resize their picture using `?s=200` at the end of the image URL.
+
+---
+
+## FAQ
+
+- **How do I do *specifically* so and so?**
+    - No problem! Just do this.
+
+---
+
+## Support
+
+Reach out to me at one of the following places!
+
+- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
+- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
+- Insert more social links here.
+
+---
+
+## Donations (Optional)
+
+- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
+
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
+
+
+---
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
