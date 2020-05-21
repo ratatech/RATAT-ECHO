@@ -4,7 +4,7 @@
 
 This repository containse mainly the PCB design files for a small echo effect unit. The circuit it's mainly composed by two major blocks, the echo and the spring reverb drive/recovery circuits. 
 
-The echo module is basically an adaptation of the echo circuit included in PT2399 echo processor [datasheet](RATAT-ECHO/tree/master/datasheets/). 
+The echo module is basically an adaptation of the echo circuit included in PT2399 echo processor [datasheet](./datasheets/). 
  
 
 ## Files
