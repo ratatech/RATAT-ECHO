@@ -273,6 +273,21 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Regulator_Linear_LM7812_TO220
 #
 DEF Regulator_Linear_LM7812_TO220 U 0 10 Y Y 1 F N
@@ -416,6 +431,17 @@ P 5 0 1 0 90 -70 70 -90 50 -50 90 -70 90 -70 F
 X E 1 100 -200 100 U 50 50 1 1 P
 X B 2 -200 0 225 R 50 50 1 1 I
 X C 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# logo_logo
+#
+DEF logo_logo U 0 40 Y Y 1 F N
+F0 "U" 0 50 50 H V C CNN
+F1 "logo_logo" 0 -50 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
 ENDDRAW
 ENDDEF
 #

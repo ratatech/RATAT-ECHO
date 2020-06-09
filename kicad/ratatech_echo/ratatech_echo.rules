@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 5460)
+    (start_pass_no 4629)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.5)
+      (against_preferred_direction_trace_costs 2.1)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.7)
+      (against_preferred_direction_trace_costs 1.9)
     )
   )
   (rule
@@ -70,8 +70,8 @@
     "Net-(C22-Pad2)" "reverb_input" "Net-(C23-Pad1)" "Net-(C24-Pad2)" "Net-(C25-Pad2)" "Net-(C26-Pad2)" VCC VDD
     "Net-(C29-Pad2)" output "Net-(C32-Pad1)" "Net-(C33-Pad2)" "Net-(C33-Pad1)" "Net-(C34-Pad2)" "Net-(C34-Pad1)" "Net-(C38-Pad1)"
     "Net-(D1-Pad1)" "Net-(D3-Pad1)" "Net-(D4-Pad2)" "Net-(D5-Pad1)" "Net-(D6-Pad1)" "reverb_in+" "Net-(J4-PadT)" "Net-(J5-Pad1)"
-    "Net-(Q1-Pad1)" "Net-(Q2-Pad3)" "Net-(Q3-Pad2)" "Net-(Q4-Pad2)" "Net-(R29-Pad2)" "Net-(R3-Pad1)" "Net-(R5-Pad2)" "Net-(R8-Pad2)"
-    "Net-(R8-Pad1)" "Net-(R17-Pad2)" "Net-(R17-Pad1)" "Net-(R28-Pad2)" "Net-(R31-Pad2)" "Net-(D8-Pad1)"
+    "Net-(Q1-Pad1)" "Net-(Q3-Pad2)" "Net-(Q4-Pad2)" "Net-(R29-Pad2)" "Net-(R3-Pad1)" "Net-(R5-Pad2)" "Net-(R8-Pad2)" "Net-(R8-Pad1)"
+    "Net-(R17-Pad2)" "Net-(R17-Pad1)" "Net-(R28-Pad2)" "Net-(R31-Pad2)" "Net-(D8-Pad1)" "Net-(D9-Pad2)" "Net-(R39-Pad2)" "Net-(Q2-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
