@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Users\rata\Dropbox\Ratatech\projects\ratatech_echo\kicad\ratatech_echo\ratatech_echo.sch</source>
-    <date>6/12/2020 01:16:25</date>
+    <date>6/14/2020 22:45:20</date>
     <tool>Eeschema (5.1.4)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -189,7 +189,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">555-RVS-50V2R2MU-R</field>
+        <field name="Mouser Part Number">661-EMVE630ADA3R3ME5</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -254,7 +254,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">555-RVS-50V2R2MU-R</field>
+        <field name="Mouser Part Number">661-EMVE630ADA3R3ME5</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -265,7 +265,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">555-RVS-50VR47MU-R </field>
+        <field name="Mouser Part Number">RVS-50V010MU-R</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -276,7 +276,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">555-RVS-50V2R2MU-R</field>
+        <field name="Mouser Part Number">661-EMVE630ADA3R3ME5</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -287,7 +287,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">555-RVS-50VR47MU-R </field>
+        <field name="Mouser Part Number">RVS-50V010MU-R</field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -507,7 +507,7 @@
       <footprint>Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">688-RK09D113000Q</field>
+        <field name="Mouser Part Number">652-PTV09A-4025FB103</field>
       </fields>
       <libsource lib="Device" part="R_POT" description="Potentiometer"/>
       <sheetpath names="/" tstamps="/"/>
@@ -584,7 +584,7 @@
       <footprint>Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">688-RK09D113000Q</field>
+        <field name="Mouser Part Number">652-PTV09A-4025FB103</field>
       </fields>
       <libsource lib="Device" part="R_POT" description="Potentiometer"/>
       <sheetpath names="/" tstamps="/"/>
@@ -705,7 +705,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">555-RVS-35V4R7MU-R</field>
+        <field name="Mouser Part Number">647-UWT1H4R7MCL1B </field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -837,7 +837,7 @@
       <footprint>Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">688-RK09D113000K</field>
+        <field name="Mouser Part Number">652-PTV09A-4225FA503</field>
       </fields>
       <libsource lib="Device" part="R_POT" description="Potentiometer"/>
       <sheetpath names="/" tstamps="/"/>
@@ -870,7 +870,7 @@
       <footprint>Capacitor_SMD:CP_Elec_5x5.3</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">555-RVS-35V4R7MU-R</field>
+        <field name="Mouser Part Number">647-UWT1H4R7MCL1B </field>
       </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -969,7 +969,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf</datasheet>
       <fields>
-        <field name="Mouser Part Number">583-MMBT3906</field>
+        <field name="Mouser Part Number">771-MMBT3906T/R</field>
       </fields>
       <libsource lib="Transistor_BJT" part="2N3906" description="-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92"/>
       <sheetpath names="/" tstamps="/"/>
@@ -980,7 +980,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
       <fields>
-        <field name="Mouser Part Number">583-MMBT4401</field>
+        <field name="Mouser Part Number">771-MMBT3904T/R</field>
       </fields>
       <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1035,7 +1035,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
       <fields>
-        <field name="Mouser Part Number">583-MMBT4401</field>
+        <field name="Mouser Part Number">771-MMBT3904T/R</field>
       </fields>
       <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1046,7 +1046,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf</datasheet>
       <fields>
-        <field name="Mouser Part Number">583-MMBT3906</field>
+        <field name="Mouser Part Number">771-MMBT3906T/R</field>
       </fields>
       <libsource lib="Transistor_BJT" part="2N3906" description="-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1145,7 +1145,7 @@
       <footprint>Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Mouser Part Number">RK09D113AF25A15 </field>
+        <field name="Mouser Part Number">652-PTV09A4025FB104</field>
       </fields>
       <libsource lib="Device" part="R_POT" description="Potentiometer"/>
       <sheetpath names="/" tstamps="/"/>
@@ -1188,7 +1188,7 @@
       <value>SW_DPDT_x2</value>
       <footprint>M2028B2B1W03:M2028B2B1W03</footprint>
       <fields>
-        <field name="Mouser Part Number"> 612-100-F1121</field>
+        <field name="Mouser Part Number">612-100DP3T4B1M1Q</field>
       </fields>
       <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
       <sheetpath names="/" tstamps="/"/>
